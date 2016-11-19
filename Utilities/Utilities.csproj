@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logging\ConsoleLog.cs" />
+    <Compile Include="Logging\FileLog.cs" />
+    <Compile Include="Logging\Log.cs" />
+    <Compile Include="Logging\Factory.cs" />
+    <Compile Include="Logging\LogType.cs" />
+    <Compile Include="Logging\MessageType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,9 +61,7 @@
   <ItemGroup>
     <Content Include="Zealag.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Logging\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
