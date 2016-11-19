@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Utilities")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("SAPIENT")]
+[assembly: AssemblyCompany("Zealag")]
 [assembly: AssemblyProduct("Utilities")]
 [assembly: AssemblyCopyright("Copyright © SAPIENT 2016")]
 [assembly: AssemblyTrademark("")]
