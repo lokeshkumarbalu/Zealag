@@ -39,6 +39,6 @@ namespace Zealag.Utilities.Logging
         /// <summary>
         /// The warning message.
         /// </summary>
-        Warn,
+        Warn
     }
 }
