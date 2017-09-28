@@ -36,7 +36,18 @@ namespace Zealag.Utilities.Logging
         /// <summary>
         /// Gets or sets a value indicating whether to enable timestamps in log messages.
         /// </summary>
-        public bool IsTimestampEnabled { get; set; }
+        public bool IsTimestampEnabled 
+        {
+            get
+            {
+                return this.isTimestampEnabled;
+            }
+
+            set
+            {
+                this.isTimestampEnabled = value;
+            }
+        }
 
         /// <summary>
         /// A abstract method to be implemented by derived classes. 
