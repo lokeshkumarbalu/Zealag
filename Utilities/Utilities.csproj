@@ -5,10 +5,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{33731F64-B909-4614-948F-FF86793525AD}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Zealag</RootNamespace>
-    <AssemblyName>Zealag</AssemblyName>
+    <RootNamespace>Zealag.Utilities</RootNamespace>
+    <AssemblyName>Zealag.Utilities</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,6 +35,9 @@
   <PropertyGroup>
     <ApplicationIcon>Zealag.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,13 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logging\ConsoleLog.cs" />
-    <Compile Include="Logging\FileLog.cs" />
-    <Compile Include="Logging\Log.cs" />
-    <Compile Include="Logging\Factory.cs" />
-    <Compile Include="Logging\LogType.cs" />
-    <Compile Include="Logging\MessageType.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Logging\Models\ConsoleLog.cs" />
+    <Compile Include="Logging\Models\FileLog.cs" />
+    <Compile Include="Logging\Models\Log.cs" />
+    <Compile Include="Logging\LogFactory.cs" />
+    <Compile Include="Logging\Constants\LogType.cs" />
+    <Compile Include="Logging\Constants\MessageType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
