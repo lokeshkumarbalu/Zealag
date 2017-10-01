@@ -4,12 +4,15 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Zealag.Utilities.Logging
+namespace Zealag.Utilities.Logging.Model
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
-    using System.Text.RegularExpressions;   
+    using System.Text.RegularExpressions;
+
+    using Zealag.Utilities.Logging.Model;
+    using Zealag.Utilities.Logging.Constant;
 
     /// <summary>
     /// The <see cref="FileLog"/> class is a derived class of <see cref="Log"/> class, used to log messages to the initialized log file.

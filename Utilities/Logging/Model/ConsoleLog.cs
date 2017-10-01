@@ -4,10 +4,13 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Zealag.Utilities.Logging
+namespace Zealag.Utilities.Logging.Model
 {
     using System;
     using System.Collections.Generic;
+
+    using Zealag.Utilities.Logging.Model;
+    using Zealag.Utilities.Logging.Constant;
 
     /// <summary>
     /// The <see cref="ConsoleLog"/> class is a derived class of <see cref="Log"/> class.

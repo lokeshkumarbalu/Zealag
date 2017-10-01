@@ -4,9 +4,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Zealag.Utilities.Logging
+namespace Zealag.Utilities.Logging.Factory
 {
     using System;
+    using Zealag.Utilities.Logging.Model;
+    using Zealag.Utilities.Logging.Constant;
 
     /// <summary>
     /// The static factory class to create Log objects when provided with the enum value from <see cref="LogType"/>.

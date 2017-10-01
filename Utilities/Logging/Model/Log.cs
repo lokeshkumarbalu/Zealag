@@ -4,11 +4,14 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Zealag.Utilities.Logging
+namespace Zealag.Utilities.Logging.Model
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
+
+    using Zealag.Utilities.Logging.Model;
+    using Zealag.Utilities.Logging.Constant;
 
     /// <summary>
     /// The base class for other logger classes, defines abstract methods to be implemented.

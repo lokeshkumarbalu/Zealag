@@ -4,7 +4,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Zealag.Utilities.Logging
+namespace Zealag.Utilities.Logging.Constant
 {
     /// <summary>
     /// Specifies constants that define message types that can be logged by the loggers.

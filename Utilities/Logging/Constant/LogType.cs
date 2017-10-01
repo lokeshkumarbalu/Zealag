@@ -4,7 +4,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Zealag.Utilities.Logging
+namespace Zealag.Utilities.Logging.Constant
 {
     /// <summary>
     /// Specifies constants that define Log types that are available from this namespace.
