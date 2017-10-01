@@ -49,12 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logging\Models\ConsoleLog.cs" />
-    <Compile Include="Logging\Models\FileLog.cs" />
-    <Compile Include="Logging\Models\Log.cs" />
-    <Compile Include="Logging\LogFactory.cs" />
-    <Compile Include="Logging\Constants\LogType.cs" />
-    <Compile Include="Logging\Constants\MessageType.cs" />
+    <Compile Include="Logging\Model\ConsoleLog.cs" />
+    <Compile Include="Logging\Model\FileLog.cs" />
+    <Compile Include="Logging\Model\Log.cs" />
+    <Compile Include="Logging\Factory\LogFactory.cs" />
+    <Compile Include="Logging\Constant\LogType.cs" />
+    <Compile Include="Logging\Constant\MessageType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
