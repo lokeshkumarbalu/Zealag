@@ -125,8 +125,7 @@ namespace Zealag.Utilities.Logging.Model
                 throw new ArgumentNullException("The message parameter cannot be null.");
             }
 
-            ConsoleColor value;
-            if (this.TextColor.TryGetValue(messageType, out value) && this.IsColorEnabled)
+            if (this.TextColor.TryGetValue(messageType, out ConsoleColor value) && this.IsColorEnabled)
             {
                 Console.ForegroundColor = value;
             }
