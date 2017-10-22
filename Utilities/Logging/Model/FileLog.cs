@@ -220,7 +220,7 @@ namespace Zealag.Utilities.Logging.Model
         /// <param name="message">The message to be logged.</param>
         /// <param name="messageType">The messageType to be used while logging the message.</param>
         /// <param name="exception">The exception to be logged.</param>
-        /// <exception cref="ArgumentException">Thrown if one of the argument passed in not valid.</exception>
+        /// <exception cref="ArgumentException">Thrown if one of the argument passed is not valid.</exception>
         /// <exception cref="ArgumentNullException">Thrown if passed argument is null.</exception>
         /// <exception cref="System.Security.SecurityException">Thrown if a security error is detected.</exception>
         /// <exception cref="System.IO.IOException">Thrown if an IO error occurs.</exception>
