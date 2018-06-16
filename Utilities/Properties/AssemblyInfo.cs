@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Zealag")]
 [assembly: AssemblyProduct("Utilities")]
-[assembly: AssemblyCopyright("Copyright © SAPIENT 2016")]
+[assembly: AssemblyCopyright("Copyright © Zealag 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
