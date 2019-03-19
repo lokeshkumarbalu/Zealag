@@ -8,12 +8,12 @@ namespace Zealag.PSModules.Model.Constants
 {
     using System.Text;
 
-    public class DocumentHeaderStyle
+    public static class DocumentHeaderStyle
     {
-        public static string BorderLine = "//------------------------------------------------------------------------------";
-        public static string CSharp = "";
-        public static string pattern = @"^[\/]{2}[-]{78}[\n][\/]{2}\s?<copyright(.*?)<\/copyright>[\n][\/]{2}[-]{78}";
-        public static string BorderLineRegex = @"^[\/]{2}[-]{78}[\n]$";
-        public static string CopyrightStartTagRegex = @"^[\/]{2}\s?<copyright\sfile="".*""\scompany="".*"">$";
+        public static readonly string BorderLine = "//------------------------------------------------------------------------------";
+        public static readonly string CSharp = "";
+        public static readonly string pattern = @"^[\/]{2}[-]{78}[\n][\/]{2}\s?<copyright(.*?)<\/copyright>[\n][\/]{2}[-]{78}";
+        public static readonly string BorderLineRegex = @"^[\/]{2}[-]{78}[\n]$";
+        public static readonly string CopyrightStartTagRegex = @"^[\/]{2}\s?<copyright\sfile="".*""\scompany="".*"">$";
     }
 }

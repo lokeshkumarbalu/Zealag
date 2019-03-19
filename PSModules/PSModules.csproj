@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cmdlets\AddDocumentationHeaderCmdlet.cs" />
+    <Compile Include="Cmdlets\AddDocumentHeaderCmdlet.cs" />
     <Compile Include="Cmdlets\GetNetworkAdaptersCmdlet.cs" />
     <Compile Include="Model\Containers\NetworkAdapter.cs" />
     <Compile Include="Model\Constants\DocumentHeaderStyle.cs" />

@@ -11,9 +11,9 @@ namespace Zealag.PSModules.Cmdlets
     using System.IO;
     using System.Management.Automation;
 
-    [Cmdlet(VerbsCommon.Add, "DocumentationHeader")]
+    [Cmdlet(VerbsCommon.Add, "DocumentHeader")]
     [OutputType(typeof(string[]))]
-    public class AddDocumentationHeaderCmdlet : Cmdlet
+    public class AddDocumentHeaderCmdlet : Cmdlet
     {
         [Parameter(Position = 0,
             ValueFromPipeline = true,
@@ -27,37 +27,37 @@ namespace Zealag.PSModules.Cmdlets
         [ValidateNotNullOrEmpty]
         public string Destination { get; set; }
 
-        private string _company;
+        private string company;
 
         protected override void BeginProcessing()
         {
             base.BeginProcessing();
             Configuration config = ConfigurationManager.OpenExeConfiguration(this.GetType().Assembly.Location);
             AppSettingsSection appConfig = (AppSettingsSection)config.GetSection("appSettings");
-            _company = appConfig.Settings["Company"].Value;
+            this.company = appConfig.Settings["Company"].Value;
         }
 
         protected override void ProcessRecord()
         {
             base.ProcessRecord();
-            if (string.IsNullOrEmpty(FileName))
+            if (string.IsNullOrEmpty(this.FileName))
             {
-                Exception exception = new ArgumentException($"Argument {nameof(FileName)}, cannot be null or empty");
-                ErrorRecord errorRecord = new ErrorRecord(exception, "StringNullOrEmpty", ErrorCategory.InvalidArgument, FileName);
-                ThrowTerminatingError(errorRecord);
+                Exception exception = new ArgumentException($"Argument {nameof(this.FileName)}, cannot be null or empty");
+                ErrorRecord errorRecord = new ErrorRecord(exception, "StringNullOrEmpty", ErrorCategory.InvalidArgument, this.FileName);
+                this.ThrowTerminatingError(errorRecord);
             }
 
-            if (!string.IsNullOrEmpty(Destination))
+            if (!string.IsNullOrEmpty(this.Destination))
             {
-                if (!Directory.Exists(Destination))
+                if (!Directory.Exists(this.Destination))
                 {
-                    Exception exception = new ArgumentException($"Argument {nameof(Destination)}, cannot be null or empty");
-                    ErrorRecord errorRecord = new ErrorRecord(exception, "Invalid destination", ErrorCategory.InvalidArgument, Destination);
-                    ThrowTerminatingError(errorRecord);
+                    Exception exception = new ArgumentException($"Argument {nameof(this.Destination)}, cannot be null or empty");
+                    ErrorRecord errorRecord = new ErrorRecord(exception, "Invalid destination", ErrorCategory.InvalidArgument, this.Destination);
+                    this.ThrowTerminatingError(errorRecord);
                 }
             }
 
-            WriteObject(FileName);
+            this.WriteObject(this.FileName);
         }
     }
 }
